@@ -1,8 +1,20 @@
 {
   "name": "zenn-next-sidebar",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
   "scripts": {
     "build": "tsc"
   },
